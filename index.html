@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Deller - Blender 3D Modeling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>3Deller</h1>
+            <nav>
+                <a href="#" id="registerBtn" class="button" data-path="file:///C:/Users/sanok2011/Documents/3deller/register.html">Регистрация</a>
+                <a href="#" id="loginBtn" class="button" data-path="file:///C:/Users/sanok2011/Documents/3deller/login.html">Вход</a>
+                <a href="#" id="accountBtn" class="button" data-path="file:///C:/Users/sanok2011/Documents/3deller/account.html">Аккаунт</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container about-blender">
+            <h2>3D Моделирование в Blender</h2>
+            <p>Добро пожаловать в мир 3D-моделирования с Blender!</p>
+            <p>Blender - это мощный и бесплатный инструмент для создания 3D-графики, анимаций, и визуальных эффектов. Он идеально подходит как для начинающих, так и для опытных профессионалов.</p>
+            <h3>Что такое 3D-моделирование?</h3>
+            <p>3D-моделирование — это процесс создания трехмерных объектов в цифровом пространстве. Эти модели могут использоваться в играх, анимации, фильмах, дизайне, архитектуре, 3D-печати и других областях.</p>
+            <h3>Почему Blender лучший?</h3>
+            <ul>
+                <li>Бесплатный и с открытым исходным кодом.</li>
+                <li>Широкий спектр возможностей: моделирование, текстурирование, анимация, рендеринг и многое другое.</li>
+                <li>Огромное сообщество пользователей и множество обучающих материалов.</li>
+                <li>Постоянно развивается и обновляется, предоставляя передовые инструменты.</li>
+            </ul>
+        </section>
+    </main>
+    <a href="https://t.me/itsvetnashego" class="course-button" target="_blank">Пройти курс</a>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 3Deller. Все права защищены.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('registerBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+             window.location.href = this.getAttribute('data-path');
+        });
+        document.getElementById('loginBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+             window.location.href = this.getAttribute('data-path');
+        });
+        document.getElementById('accountBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+              window.location.href = this.getAttribute('data-path');
+        });
+    </script>
+</body>
+</html>

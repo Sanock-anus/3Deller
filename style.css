@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    display: flex; /* Для размещения кнопки "Пройти курс" */
+    flex-direction: column; /* Для размещения кнопки "Пройти курс" */
+    min-height: 100vh; /* Чтобы footer был внизу */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+    padding: 10px 15px;
+    background-color: #007bff;
+  border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #0056b3;
+}
+
+main section {
+    padding: 40px 0;
+}
+
+main h2 {
+  text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-blender {
+  text-align: justify; /* Выравнивание текста по ширине */
+}
+
+.course-button {
+    display: block;
+    position: fixed; /* Абсолютное позиционирование для "Пройти курс" */
+    bottom: 20px; /* Привязка снизу */
+    left: 20px; /* Привязка слева */
+    padding: 12px 25px;
+    background-color: #28a745; /* Зеленый цвет */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.course-button:hover {
+    background-color: #1e7e34;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Чтобы footer был снизу */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+
+    header nav {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    header nav a {
+       display: block;
+       margin: 5px auto;
+      text-align: center;
+    }
+    .course-button {
+        left: 10px;
+        bottom: 10px;
+        padding: 10px 20px;
+    }
+}
